@@ -200,7 +200,6 @@ The Following code was used for analysis
 
     End Sub
 
-
 Conclusion
 
 Refactoring is cleaner, more efficient and more robust. The code lines tend to be faster as seen in the screenshots. This decrease in time is the best seen in the run time difference between the non-refactored code and the refactored code. 
