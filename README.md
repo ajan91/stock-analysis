@@ -6,10 +6,10 @@ The Project asked me to evaluate stocks for a client. The client requested that 
 
 Results
 
-The Following code was used for inital analysis
+The Following code was used for analysis
 
-"Sub DQAnalysis()
-Worksheets("DQ Analysis").Activate
+    Sub DQAnalysis()
+    Worksheets("DQ Analysis").Activate
 
     Range("A1").Value = "DAQO (Ticker: DQ)"
 
@@ -56,9 +56,9 @@ Worksheets("DQ Analysis").Activate
     Cells(4, 1).Value = 2018
     Cells(4, 2).Value = totalVolume
     Cells(4, 3).Value = (endingPrice / startingPrice) - 1
-End Sub
+    End Sub
 
-Sub AllStocksAnalysis()
+    Sub AllStocksAnalysis()
 
     Dim startTime As Single
     Dim endTime  As Single
@@ -67,39 +67,38 @@ Sub AllStocksAnalysis()
 
        startTime = Timer
        
+       '1) Format the output sheet on All Stocks Analysis worksheet
+        Worksheets("All Stocks Analysis").Activate
+        Range("A1").Value = "All Stocks (2018)"
+        'Create a header row
+         Cells(3, 1).Value = "Ticker"
+         Cells(3, 2).Value = "Total Daily Volume"
+         Cells(3, 3).Value = "Return"
 
-   '1) Format the output sheet on All Stocks Analysis worksheet
-   Worksheets("All Stocks Analysis").Activate
-   Range("A1").Value = "All Stocks (2018)"
-   'Create a header row
-   Cells(3, 1).Value = "Ticker"
-   Cells(3, 2).Value = "Total Daily Volume"
-   Cells(3, 3).Value = "Return"
+         '2) Initialize array of all tickers
+         Dim tickers(12) As String
+         tickers(0) = "AY"
+     tickers(1) = "CSIQ"
+     tickers(2) = "DQ"
+     tickers(3) = "ENPH"
+     tickers(4) = "FSLR"
+    tickers(5) = "HASI"
+    tickers(6) = "JKS"
+    tickers(7) = "RUN"
+    tickers(8) = "SEDG"
+    tickers(9) = "SPWR"
+    tickers(10) = "TERP"
+    tickers(11) = "VSLR"
+    '3a) Initialize variables for starting price and ending price
+    Dim startingPrice As Single
+    Dim endingPrice As Single
+    '3b) Activate data worksheet
+    Worksheets("2018").Activate
+    '3c) Get the number of rows to loop over
+    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
 
-   '2) Initialize array of all tickers
-   Dim tickers(12) As String
-   tickers(0) = "AY"
-   tickers(1) = "CSIQ"
-   tickers(2) = "DQ"
-   tickers(3) = "ENPH"
-   tickers(4) = "FSLR"
-   tickers(5) = "HASI"
-   tickers(6) = "JKS"
-   tickers(7) = "RUN"
-   tickers(8) = "SEDG"
-   tickers(9) = "SPWR"
-   tickers(10) = "TERP"
-   tickers(11) = "VSLR"
-   '3a) Initialize variables for starting price and ending price
-   Dim startingPrice As Single
-   Dim endingPrice As Single
-   '3b) Activate data worksheet
-   Worksheets("2018").Activate
-   '3c) Get the number of rows to loop over
-   RowCount = Cells(Rows.Count, "A").End(xlUp).Row
-
-   '4) Loop through tickers
-   For i = 0 To 11
+    '4) Loop through tickers
+    For i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
        '5) loop through rows in the data
@@ -131,14 +130,14 @@ Sub AllStocksAnalysis()
        Cells(4 + i, 2).Value = totalVolume
        Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
 
-   Next i
+     Next i
    
     endTime = Timer
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
-End Sub
+    End Sub
 
-Sub formatAllStocksAnalysisTable()
+    Sub formatAllStocksAnalysisTable()
 
     'Formatting
     Worksheets("All Stocks Analysis").Activate
@@ -181,27 +180,25 @@ Sub formatAllStocksAnalysisTable()
     Next i
 
     
-End Sub
+    End Sub
 
-Sub ClearWorksheet()
+    Sub ClearWorksheet()
 
     Cells.Clear
 
-End Sub
+    End Sub
 
-Sub yearValueAnalysis()
+    Sub yearValueAnalysis()
 
-yearValue = InputBox("What year would you like to run the analysis on?")
+    yearValue = InputBox("What year would you like to run the analysis on?")
 
-Range("A1").Value = "All Stocks (2018)"
-Range("A1").Value = "All Stocks (" + yearValue + ")"
+    Range("A1").Value = "All Stocks (2018)"
+    Range("A1").Value = "All Stocks (" + yearValue + ")"
 
-Worksheets("All Stocks Analysis").Activate
-Worksheets(yearValue).Activate
+    Worksheets("All Stocks Analysis").Activate
+    Worksheets(yearValue).Activate
 
-End Sub"
-
-In addition, The following code was used
+    End Sub
 
 
 Conclusion
