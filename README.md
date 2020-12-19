@@ -28,7 +28,7 @@ Here we show examples of code and compare the stock performance between 2017 and
 
 8. The pop-up messages showing the elapsed run time for the script are saved as VBA_Challenge_2017.png and VBA_Challenge_2018.png
 
-Summary
+# Summary
 
 There are certain advantages and disadvantages of using refactored code. In addition, a comparison can be drawn from the original code to the refactored code. The following illustrate those findings.
 
