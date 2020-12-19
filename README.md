@@ -13,25 +13,15 @@ The purpose of the challenge is to edit, or refactor, the originial code to loop
 Here we show examples of code and compare the stock performance between 2017 and 2018 as well as the execution times of the original script and the refactored script.
 
 1. The tickerIndex is set equal to zero before looping over the rows. 
-
 ![](Resources/Step1a.png)
-
 ![](Resources/Step1b.png)
-
 2. Arrays are created for tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices
-
 ![](Resources/Step2a.png)
-
 ![](Resources/Step2b_3a.png)
-
 3. The tickerIndex is used to access the stock ticker index for the tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices arrays
-
 ![](Resources/Step2b_3a.png)
-
 ![](Resources/Step3b.png)
-
 ![](Resources/Step3c.png)
-
 4. The script loops through stock data, reading and storing all of the following values from each row: tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices
 ![](Resources/Step4.png)
 
