@@ -59,4 +59,3 @@ When Refactoring takes place, it could allow complex code becoming more seamless
 - Comparison to the original code
 
 When comparing the refactored code to the original code, the refactored code is easier to maintain, cleaner to read and easy to follow the logic. I mentioned earlier that refactored code could pose a potential problem by oversimplifying complex and necessary code, and while that still holds true, in this example, it is no longer the case. The refactored code is much easier and simpler to follow and effiecent to execute. 
-
