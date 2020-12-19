@@ -13,20 +13,32 @@ The purpose of the challenge is to edit, or refactor, the originial code to loop
 Here we show examples of code and compare the stock performance between 2017 and 2018 as well as the execution times of the original script and the refactored script.
 
 1. The tickerIndex is set equal to zero before looping over the rows. 
+![](Resources/Step1a.png)
+![](Resources/Step1b.png)
 
 2. Arrays are created for tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices
+![](Resources/Step2a.png)
+![](Resources/Step2b_3a.png)
 
 3. The tickerIndex is used to access the stock ticker index for the tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices arrays
+![](Resources/Step2b_3a.png)
+![](Resources/Step3b.png)
+![](Resources/Step3c.png)
 
 4. The script loops through stock data, reading and storing all of the following values from each row: tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices
+![](Resources/Step4.png)
 
 5. Code for formatting the cells in the spreadsheet is working
+![](Resources/Step1a.png)
 
 6. There are comments to explain the purpose of the code
+![](Resources/Step1a.png)
 
 7. The outputs for the 2017 and 2018 stock analyses in the VBA_Challenge.xlsm workbook match the outputs from the AllStockAnalysis in the module
+![](Resources/Step1a.png)
 
 8. The pop-up messages showing the elapsed run time for the script are saved as VBA_Challenge_2017.png and VBA_Challenge_2018.png
+![](Resources/Step1a.png)
 
 # Summary
 
