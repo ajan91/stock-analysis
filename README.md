@@ -56,7 +56,7 @@ There are certain advantages and disadvantages of using refactored code. In addi
 Refactored code creates a certain logic within the code. This code can therefore illustrate erros when produced. For example, if foreign loops, if statements do not 'flow' (act in a coherent matter with the rest of the code, then the user can identify and simplify the foreign code.
 In addition, this logic in the code also creates a certain sense of 
 
-Disadvantages
+- Disadvantages
 
 Code that is long and complex tend to suffer more errors when refactoring takes place. This can sometimes change the outcome of the code and also the logic of the oriignal intent. Therefore one major disadvantage is the steering away from the oringial intent and change in logic.
 When Refactoring takes place, it could allow complex code becoming more seamless and integrated. On face value, this may be appropriate and even warranted, however, upon closer analysis certain types of code would actually be better suited to independent blocks of code (due to the complex nature) rather than having it seamlessly integrated. This is important because when errors occur, it would be wise to highlight certain sections of the code (for a specific purpose) rather than doing a, potnetially, laborious act of reinventing the code and potentially a new logic to the code.
