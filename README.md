@@ -26,9 +26,11 @@ Here we show examples of code and compare the stock performance between 2017 and
 ![](Resources/Step4.png)
 
 5. Code for formatting the cells in the spreadsheet is working
+
 *Please see above*
 
 6. There are comments to explain the purpose of the code
+
 *Please see above*
 
 7. The outputs for the 2017 and 2018 stock analyses in the VBA_Challenge.xlsm workbook match the outputs from the AllStockAnalysis in the module
@@ -36,6 +38,7 @@ Here we show examples of code and compare the stock performance between 2017 and
 ![](Resources/VBA_Challenge_2018.png)
 
 8. The pop-up messages showing the elapsed run time for the script are saved as VBA_Challenge_2017.png and VBA_Challenge_2018.png
+
 *Please see above*
 
 
